@@ -38,7 +38,7 @@ source ~/.bashrc
 
 ```bash
 cd ~/Desktop
-git clone https://github.com/TheBlackRobotsFoundation/Rover.git
+git clone https://github.com/Black-Robots/Rover.git
 cd Rover
 ```
 

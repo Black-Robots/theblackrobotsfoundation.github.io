@@ -17,4 +17,4 @@ La documentación del **Rover** está en preparación. ¡Vuelve pronto!
 
 Estamos trabajando en esta sección. Mientras tanto, puedes seguir el avance del proyecto en GitHub:
 
-- [GitHub del Proyecto](https://github.com/TheBlackRobotsFoundation/Rover)
+- [GitHub del Proyecto](https://github.com/Black-Robots/Rover)

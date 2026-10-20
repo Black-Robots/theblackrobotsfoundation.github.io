@@ -9,7 +9,7 @@ const diego = {
   description:
     'Aventurero y curioso por naturaleza. La robótica y la electrónica son mi obsesión desde hace años, y Black Robots es mi forma de documentarlo todo, enseñar lo que sé y crear la comunidad que a mí me hubiera gustado encontrar.',
   links: [
-    {label: 'GitHub', href: 'https://github.com/TheBlackRobotsFoundation'},
+    {label: 'GitHub', href: 'https://github.com/Black-Robots'},
     {label: 'Instagram', href: 'https://instagram.com/diegoo.rrz'},
     {label: 'Email', href: 'mailto:hello@blackrobots.org'},
   ],

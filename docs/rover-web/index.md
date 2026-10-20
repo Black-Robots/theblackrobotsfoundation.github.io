@@ -111,7 +111,7 @@ Configura los tuyos en `rover_bringup/rover_config/config/rover_params.yaml`
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/TheBlackRobotsFoundation/Rover.git
+git clone https://github.com/Black-Robots/Rover.git
 cd Rover
 
 # Instalar todas las dependencias automáticamente
@@ -404,11 +404,11 @@ Ver documentación detallada en [docs/getting-started/hardware-setup.md](/proyec
 
 ## Licencia
 
-Este proyecto está licenciado bajo GPL v3. Ver [LICENSE](https://github.com/TheBlackRobotsFoundation/Rover/blob/main/LICENSE) para más detalles.
+Este proyecto está licenciado bajo GPL v3. Ver [LICENSE](https://github.com/Black-Robots/Rover/blob/main/LICENSE) para más detalles.
 
 ## Contacto
 
-The Black Robots Foundation - [@TheBlackRobots](https://github.com/TheBlackRobotsFoundation)
+The Black Robots Foundation - [@TheBlackRobots](https://github.com/Black-Robots)
 
-Proyecto: [https://github.com/TheBlackRobotsFoundation/Rover](https://github.com/TheBlackRobotsFoundation/Rover)
+Proyecto: [https://github.com/Black-Robots/Rover](https://github.com/Black-Robots/Rover)
 

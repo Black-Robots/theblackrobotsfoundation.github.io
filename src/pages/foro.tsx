@@ -20,7 +20,7 @@ export default function Foro() {
           
           <div className={styles.giscusWrapper}>
             <Giscus
-              repo="TheBlackRobotsFoundation/theblackrobotsfoundation.github.io"
+              repo="Black-Robots/theblackrobotsfoundation.github.io"
               repoId="R_kgDOP9fGWg"
               category="General"
               categoryId="DIC_kwDOP9fGWs4C2HDt"

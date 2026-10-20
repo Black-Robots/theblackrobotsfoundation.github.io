@@ -9,6 +9,9 @@ const path = require('path');
 const ROVER_PATH = path.join(__dirname, '../docs/rover');
 const OUTPUT_PATH = path.join(__dirname, '../docs/rover-web');
 
+// La organización de GitHub se llama ahora Black-Robots: se corrigen los enlaces antiguos del Rover.
+const fixOrg = (text) => text.replace(/github\.com\/TheBlackRobotsFoundation/g, 'github.com/Black-Robots');
+
 // Estructura workspace -> archivo salida
 const workspaces = {
   'rover_core': 'core',
@@ -39,7 +42,7 @@ const fixedReadme = mainReadme
   .replace(/\]\(docs\/architecture\/?\)/g, '](/proyectos/rover-web/guides/architecture/overview)')
   .replace(/\]\(docs\/?\)/g, '](/proyectos/rover-web/guides)')
   .replace(/\(docs\//g, '(/proyectos/rover-web/guides/')
-  .replace(/\(LICENSE\)/g, '(https://github.com/TheBlackRobotsFoundation/Rover/blob/main/LICENSE)');
+  .replace(/\(LICENSE\)/g, '(https://github.com/Black-Robots/Rover/blob/main/LICENSE)');
 
 const indexContent = `---
 sidebar_position: 1
@@ -49,7 +52,7 @@ title: Rover
 
 ${fixedReadme}
 `;
-fs.writeFileSync(path.join(OUTPUT_PATH, 'index.md'), indexContent);
+fs.writeFileSync(path.join(OUTPUT_PATH, 'index.md'), fixOrg(indexContent));
 console.log('✓ Generado index.md');
 
 // Generar archivos para cada workspace
@@ -65,7 +68,7 @@ title: ${wsDir.replace('rover_', '').charAt(0).toUpperCase() + wsDir.replace('ro
 
 ${content}
 `;
-    fs.writeFileSync(path.join(OUTPUT_PATH, 'workspaces', `${outputName}.md`), outputContent);
+    fs.writeFileSync(path.join(OUTPUT_PATH, 'workspaces', `${outputName}.md`), fixOrg(outputContent));
     console.log(`✓ Generado workspaces/${outputName}.md`);
   }
 });
@@ -92,7 +95,7 @@ function copyRecursive(src, dest) {
           .replace(/\(\.\.\/docs\//g, '(./')
           .replace(/\(guides\//g, '(./')
           .replace(/\(docs\//g, '(./');
-        fs.writeFileSync(destPath, content);
+        fs.writeFileSync(destPath, fixOrg(content));
       }
     });
   }

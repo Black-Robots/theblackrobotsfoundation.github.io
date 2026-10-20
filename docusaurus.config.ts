@@ -33,7 +33,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'TheBlackRobotsFoundation', // Usually your GitHub org/user name.
+  organizationName: 'Black-Robots', // Usually your GitHub org/user name.
   projectName: 'theblackrobotsfoundation.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
@@ -127,7 +127,7 @@ const config: Config = {
         {to: '/quienes-somos', label: 'Quiénes Somos', position: 'right'},
         {to: '/foro', label: 'Foro', position: 'right'},
         {
-          href: 'https://github.com/TheBlackRobotsFoundation',
+          href: 'https://github.com/Black-Robots',
           label: 'GitHub',
           position: 'right',
         },
@@ -174,7 +174,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/TheBlackRobotsFoundation',
+              href: 'https://github.com/Black-Robots',
             },
           ],
         },

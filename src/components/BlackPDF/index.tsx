@@ -15,9 +15,9 @@ import Signature from './icons/signature.svg';
 import {LANGS, T, type Lang} from './texts';
 import styles from './styles.module.css';
 
-const REPO = 'https://github.com/TheBlackRobotsFoundation/BlackPDF';
+const REPO = 'https://github.com/Black-Robots/BlackPDF';
 const RELEASES = `${REPO}/releases/latest`;
-const API = 'https://api.github.com/repos/TheBlackRobotsFoundation/BlackPDF/releases/latest';
+const API = 'https://api.github.com/repos/Black-Robots/BlackPDF/releases/latest';
 const STORAGE_KEY = 'blackpdf-lang';
 
 const ICONS: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = {
