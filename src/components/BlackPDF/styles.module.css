@@ -1,129 +1,205 @@
 /* Página de BlackPDF: misma estética que el sitio (negro, grises, líneas
-   rectas) con el rojo de BlackPDF como único acento. */
+   rectas) con el rojo de BlackPDF como único acento. Los grises de texto
+   cumplen el contraste AA sobre el fondo negro. */
 
 .page {
   --blackpdf-red: #e5484d;
+  --blackpdf-red-dark: #c93439;
   background: #0a0a0a;
   padding-bottom: 5rem;
-  position: relative;
   overflow-x: hidden;
 }
 
-.languages {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.5rem;
+.page a:focus-visible,
+.page button:focus-visible {
+  outline: 2px solid var(--blackpdf-red);
+  outline-offset: 3px;
+}
+
+/* Aviso de que la página existe en el idioma del navegador. */
+.banner {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  padding: 0.6rem 3rem 0.6rem 1.5rem;
+  position: relative;
+  background: #141414;
+  border-bottom: 1px solid #262626;
+  font-size: 0.9rem;
+}
+
+.banner p {
+  margin: 0;
+  color: #c8c8c8;
+}
+
+.banner a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.bannerClose {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  padding: 0.35rem;
+  background: transparent;
+  border: 0;
+  border-radius: 2px;
+  color: #a0a0a0;
+  cursor: pointer;
+}
+
+.bannerClose:hover {
+  color: #ffffff;
+  background: #222222;
+}
+
+.languages {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 0;
+  display: flex;
+  justify-content: flex-end;
   gap: 0.25rem;
-  z-index: 2;
 }
 
 .language,
 .languageActive {
-  background: transparent;
-  border: 1px solid #262626;
-  color: #8a8a8a;
+  border: 1px solid #2e2e2e;
+  color: #a0a0a0;
   font-size: 0.75rem;
   letter-spacing: 0.08em;
-  padding: 0.3rem 0.55rem;
+  line-height: 1;
+  padding: 0.45rem 0.6rem;
   border-radius: 2px;
-  cursor: pointer;
-  font-family: inherit;
 }
 
 .language:hover {
   color: #ffffff;
-  border-color: #404040;
+  border-color: #4a4a4a;
+  text-decoration: none;
 }
 
-.languageActive {
+.languageActive,
+.languageActive:hover {
   color: #ffffff;
   border-color: var(--blackpdf-red);
+  text-decoration: none;
 }
 
+/* Cabecera compacta: texto a la izquierda y captura a la derecha. */
 .hero {
-  text-align: center;
-  padding: 6rem 1.5rem 3rem;
-  background: linear-gradient(180deg, #0a0a0a 0%, #000000 100%);
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: 3.5rem;
+  align-items: center;
 }
 
-.logo {
-  display: block;
-  width: 112px;
-  height: 112px;
-  margin: 0 auto 1.5rem;
+.heroText,
+.heroShot {
+  min-width: 0;
 }
 
 /* BlackPDF forma parte de la BlackSuite. */
 .suite {
   display: inline-block;
-  margin: 0 auto 0.75rem;
+  margin: 0 0 0.75rem;
   padding: 0.2rem 0.7rem;
-  border: 1px solid #262626;
+  border: 1px solid #2e2e2e;
   border-radius: 2px;
   font-size: 0.75rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #9a9a9a;
+  color: #a8a8a8;
 }
 
 .title {
   font-size: 3.4rem;
+  line-height: 1.05;
   margin-bottom: 0.75rem;
   color: #ffffff;
   letter-spacing: -0.03em;
 }
 
 .tagline {
-  font-size: 1.35rem;
-  color: #d0d0d0;
-  margin: 0 auto 1rem;
-  max-width: 760px;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: #d8d8d8;
+  margin: 0 0 1rem;
 }
 
 .intro {
-  color: #8a8a8a;
-  max-width: 720px;
-  margin: 0 auto;
+  color: #a0a0a0;
+  margin: 0;
   line-height: 1.6;
+}
+
+.note {
+  margin: 1.25rem 0 0;
+  padding: 0.75rem 1rem;
+  border-left: 2px solid var(--blackpdf-red);
+  background: #141414;
+  color: #d8d8d8;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .actions {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 2rem;
 }
 
+.downloads,
+.downloadsOnly {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+/* En Mac y móvil no hay botón principal. */
+.downloadsOnly {
+  margin-top: 1.5rem;
+}
+
 .hero :global(.button--primary) {
   background: var(--blackpdf-red);
+  border-color: var(--blackpdf-red);
   color: #ffffff;
 }
 
 .hero :global(.button--primary):hover {
-  background: #f06a6e;
+  background: var(--blackpdf-red-dark);
+  border-color: var(--blackpdf-red-dark);
   color: #ffffff;
 }
 
 .meta {
-  margin-top: 1.25rem;
+  margin: 1.25rem 0 0;
   font-size: 0.85rem;
-  color: #606060;
+  line-height: 1.6;
+  color: #9a9a9a;
 }
 
 .meta a {
-  color: #a0a0a0;
+  color: #d0d0d0;
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-.shot {
-  max-width: 1180px;
-  margin: 1rem auto 0;
-  padding: 0 1.5rem;
-}
-
-.shot img,
+.heroShot img,
 .split img,
 .splitReverse img {
   display: block;
@@ -136,10 +212,10 @@
 
 .privacy {
   max-width: 1180px;
-  margin: 4rem auto 0;
+  margin: 2rem auto 0;
   padding: 2rem 1.5rem;
-  border-top: 1px solid #1a1a1a;
-  border-bottom: 1px solid #1a1a1a;
+  border-top: 1px solid #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -162,7 +238,7 @@
 }
 
 .privacy li {
-  color: #b0b0b0;
+  color: #b8b8b8;
   padding-left: 1rem;
   position: relative;
 }
@@ -200,7 +276,7 @@
 
 .card {
   background: #121212;
-  border: 1px solid #222222;
+  border: 1px solid #242424;
   border-radius: 2px;
   padding: 1.4rem 1.5rem;
   transition: border-color 0.2s ease;
@@ -210,16 +286,26 @@
   border-color: #3a3a3a;
 }
 
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  background: rgba(229, 72, 77, 0.12);
+  color: var(--blackpdf-red);
+}
+
 .card h3 {
   font-size: 1.05rem;
   color: #ffffff;
   margin-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  border-left: 2px solid var(--blackpdf-red);
 }
 
 .card p {
-  color: #8a8a8a;
+  color: #a0a0a0;
   font-size: 0.95rem;
   line-height: 1.55;
   margin: 0;
@@ -249,7 +335,7 @@
 
 .split p,
 .splitReverse p {
-  color: #9a9a9a;
+  color: #a8a8a8;
   line-height: 1.65;
 }
 
@@ -258,16 +344,22 @@
   margin: 5rem auto 0;
   padding: 3rem 1.5rem 0;
   text-align: center;
-  border-top: 1px solid #1a1a1a;
+  border-top: 1px solid #1f1f1f;
 }
 
 .open p {
-  color: #9a9a9a;
+  color: #a8a8a8;
+}
+
+.open .actions {
+  justify-content: center;
 }
 
 @media screen and (max-width: 996px) {
   .hero {
-    padding-top: 5rem;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+    padding-top: 1.5rem;
   }
 
   .title {
@@ -280,7 +372,14 @@
     gap: 1.5rem;
   }
 
-  .languages {
-    right: 1rem;
+  /* En una sola columna el texto va siempre antes que la imagen. */
+  .splitReverse > img {
+    order: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
   }
 }
