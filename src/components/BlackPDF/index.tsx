@@ -92,9 +92,10 @@ export default function BlackPDFPage({lang}: {lang: Lang}): ReactNode {
     version: '',
   });
   const shots = {
-    document: useBaseUrl('/img/blackpdf/document.webp'),
-    viewer3d: useBaseUrl('/img/blackpdf/viewer3d.webp'),
-    home: useBaseUrl('/img/blackpdf/home.webp'),
+    // Capturas de la aplicación en el idioma de la página.
+    document: useBaseUrl(`/img/blackpdf/document-${lang}.webp`),
+    viewer3d: useBaseUrl(`/img/blackpdf/viewer3d-${lang}.webp`),
+    home: useBaseUrl(`/img/blackpdf/home-${lang}.webp`),
   };
   const card = `${siteConfig.url}${useBaseUrl(`/img/blackpdf/og-${lang}.png`)}`;
 
