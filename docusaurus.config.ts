@@ -119,6 +119,11 @@ const config: Config = {
           to: '/noticias',
           position: 'left',
         },
+        {
+          label: 'BlackPDF',
+          to: '/blackpdf',
+          position: 'left',
+        },
         {to: '/quienes-somos', label: 'Quiénes Somos', position: 'right'},
         {to: '/foro', label: 'Foro', position: 'right'},
         {
@@ -144,6 +149,10 @@ const config: Config = {
             {
               label: 'Plotter',
               to: '/proyectos/plotter/',
+            },
+            {
+              label: 'BlackPDF',
+              to: '/blackpdf',
             },
           ],
         },
