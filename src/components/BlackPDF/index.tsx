@@ -8,10 +8,14 @@ import BookOpen from './icons/book-open.svg';
 import LayoutGrid from './icons/layout-grid.svg';
 import Lock from './icons/lock.svg';
 import MessageSquare from './icons/message-square.svg';
+import Paperclip from './icons/paperclip.svg';
 import RefreshCw from './icons/refresh-cw.svg';
+import Ruler from './icons/ruler.svg';
 import ScanText from './icons/scan-text.svg';
 import Scissors from './icons/scissors.svg';
+import Sheet from './icons/sheet.svg';
 import Signature from './icons/signature.svg';
+import Stamp from './icons/stamp.svg';
 import {LANGS, T, type Lang} from './texts';
 import styles from './styles.module.css';
 
@@ -29,6 +33,10 @@ const ICONS: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = {
   signature: Signature,
   'scan-text': ScanText,
   lock: Lock,
+  paperclip: Paperclip,
+  ruler: Ruler,
+  stamp: Stamp,
+  sheet: Sheet,
 };
 
 type Platform = 'windows' | 'linux' | 'mac' | 'mobile';
