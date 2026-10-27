@@ -82,7 +82,7 @@ export const T: Record<Lang, Texts> = {
     ],
     threeDTitle: 'Modelos 3D en PDF',
     threeD:
-      'Abre los PDF con modelos U3D y PRC de Acrobat, programas CAD y LaTeX (Asymptote): gira, corta, aísla piezas y cambia el modo de visualización. Y mete tus propias piezas STEP, IGES, STL, OBJ o glTF en cualquier PDF para que todos puedan verlas en 3D.',
+      'Abre los PDF con modelos U3D y PRC de Acrobat, programas CAD y LaTeX (Asymptote): gira, corta, aísla piezas y cambia el modo de visualización. Mide como en un programa de CAD: reconoce esquinas, aristas, circunferencias y caras, y te da diámetros, la distancia entre centros, espesores y ángulos. Y mete tus propias piezas STEP, IGES, STL, OBJ o glTF en cualquier PDF para que todos puedan verlas en 3D.',
     installTitle: 'Instalación',
     installWindows:
       'Windows: ejecuta el instalador; no pide permisos de administrador y añade BlackPDF a «Abrir con». Si Windows SmartScreen muestra un aviso, pulsa «Más información» y «Ejecutar de todas formas».',
@@ -133,7 +133,7 @@ export const T: Record<Lang, Texts> = {
     ],
     threeDTitle: '3D models in PDF',
     threeD:
-      'Opens PDFs with U3D and PRC models from Acrobat, CAD software and LaTeX (Asymptote): rotate, cut, isolate parts and switch display modes. And put your own STEP, IGES, STL, OBJ or glTF parts into any PDF so everyone can see them in 3D.',
+      'Opens PDFs with U3D and PRC models from Acrobat, CAD software and LaTeX (Asymptote): rotate, cut, isolate parts and switch display modes. Measure like in a CAD program: it recognises corners, edges, circles and faces, and gives you diameters, distances between centres, thicknesses and angles. And put your own STEP, IGES, STL, OBJ or glTF parts into any PDF so everyone can see them in 3D.',
     installTitle: 'Installation',
     installWindows:
       'Windows: run the installer; it does not need administrator rights and adds BlackPDF to "Open with". If Windows SmartScreen shows a warning, click "More info" and "Run anyway".',
@@ -184,7 +184,7 @@ export const T: Record<Lang, Texts> = {
     ],
     threeDTitle: 'Modelos 3D em PDF',
     threeD:
-      'Abre PDFs com modelos U3D e PRC do Acrobat, de programas CAD e do LaTeX (Asymptote): gire, corte, isole peças e mude o modo de exibição. E coloque suas próprias peças STEP, IGES, STL, OBJ ou glTF em qualquer PDF para que todos possam vê-las em 3D.',
+      'Abre PDFs com modelos U3D e PRC do Acrobat, de programas CAD e do LaTeX (Asymptote): gire, corte, isole peças e mude o modo de exibição. Meça como em um programa CAD: ele reconhece cantos, arestas, circunferências e faces, e mostra diâmetros, a distância entre centros, espessuras e ângulos. E coloque suas próprias peças STEP, IGES, STL, OBJ ou glTF em qualquer PDF para que todos possam vê-las em 3D.',
     installTitle: 'Instalação',
     installWindows:
       'Windows: execute o instalador; ele não pede permissões de administrador e adiciona o BlackPDF a "Abrir com". Se o Windows SmartScreen mostrar um aviso, clique em "Mais informações" e "Executar assim mesmo".',
@@ -235,7 +235,7 @@ export const T: Record<Lang, Texts> = {
     ],
     threeDTitle: 'Modèles 3D dans les PDF',
     threeD:
-      "Ouvre les PDF avec des modèles U3D et PRC d'Acrobat, des logiciels de CAO et de LaTeX (Asymptote) : faites pivoter, coupez, isolez des pièces et changez de mode d'affichage. Et ajoutez vos propres pièces STEP, IGES, STL, OBJ ou glTF à n'importe quel PDF pour que tout le monde puisse les voir en 3D.",
+      "Ouvre les PDF avec des modèles U3D et PRC d'Acrobat, des logiciels de CAO et de LaTeX (Asymptote) : faites pivoter, coupez, isolez des pièces et changez de mode d'affichage. Mesurez comme dans un logiciel de CAO : il reconnaît les coins, les arêtes, les cercles et les faces, et vous donne les diamètres, la distance entre les centres, les épaisseurs et les angles. Et ajoutez vos propres pièces STEP, IGES, STL, OBJ ou glTF à n'importe quel PDF pour que tout le monde puisse les voir en 3D.",
     installTitle: 'Installation',
     installWindows:
       "Windows : lancez le programme d'installation ; il ne demande pas de droits d'administrateur et ajoute BlackPDF à « Ouvrir avec ». Si Windows SmartScreen affiche un avertissement, cliquez sur « Informations complémentaires » puis « Exécuter quand même ».",
